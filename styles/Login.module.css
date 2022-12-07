@@ -1,0 +1,50 @@
+/* Media queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 991px) {
+    .login-container {
+        padding: 150px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .login-container {
+      padding: 150px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .login-container {
+      padding: 200px;
+  }
+}
+
+.login-image {
+    width: 80%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: block;
+    font-size: 14px; 
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.checkbox span {
+    position: relative;
+    top: 0.2rem;
+    color: #888;
+}
+
+.checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
