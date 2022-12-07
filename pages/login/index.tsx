@@ -2,33 +2,23 @@ import React from 'react'
 import Image from 'next/image';
 import { NextPage } from 'next';
 
-import { GoogleIcon, InstagramIcon, LinkedinIcon} from 'assets/icons/index.ts';
+import { GoogleIcon, InstagramIcon, LinkedinIcon} from 'assets/icons/index';
 import { Layout } from '../../components/layout';
-import * as loginStyles from './../../styles/Login.module.css';
+import styles from './../../styles/Login.module.css';
 import LoginImage from 'assets/images/login.svg';
 
 const Login: NextPage = () => {
   return (
-    <>
     <Layout>
         <section className='flex-container'>
             <section className='flex-column-half'>
-                <header className={loginStyles['login-header']}>
-                    <span>
-                    Created by: <strong>Francisco Jarma</strong>
-                    <br/>
-                    </span>
-                </header>
-                <section className={loginStyles['social-media']}>
-                    <Image src={LinkedinIcon} width={25} height={25} alt={'linkedin-icon'}/>
+                <section className={styles['login-header']}>
+                    <span>Created by: <strong>Francisco Jarma</strong></span>
+                    <br></br>
+                    <Image style={{marginTop: 25}} src={LinkedinIcon} width={35} height={35} alt={'linkedin-icon'}/>
+                    <Image style={{marginLeft: 25}} src={InstagramIcon} width={35} height={35} alt={'instagram-icon'}/>
                 </section>
-                <section className={loginStyles['social-media']}>
-                    <Image src={InstagramIcon} width={25} height={25} alt={'linkedin-icon'}/>
-                </section>
-                <section className={loginStyles['social-media']}>
-                    <Image src={GoogleIcon} width={25} height={25} alt={'linkedin-icon'}/>
-                </section>
-                <section className={loginStyles['login-container']}>
+                <section className={styles['login-container']}>
                     <h1>Welcome back</h1>
                     <h2>Please enter your details</h2>
                     <section>
@@ -56,11 +46,10 @@ const Login: NextPage = () => {
                     </section>
                 </section>
                 <section className='flex-column-half bg-white' style={{textAlign: 'center'}}>
-                    <Image className={loginStyles['login-image']} src={LoginImage} width={100} height={100} alt={'login-image'}/>
+                    <Image className={styles['login-image']} src={LoginImage} width={100} height={100} alt={'login-image'}/>
                 </section>
         </section>
     </Layout>
-    </>
   )
 }
 

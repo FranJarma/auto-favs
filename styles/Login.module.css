@@ -4,15 +4,17 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 991px) {
-    .login-container {
-        margin: 50px;
+    .login-container{
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .login-container {
-        margin: 150px;
+        margin-left: 150px;
+        margin-right: 150px;
   }
 }
 
@@ -45,14 +47,9 @@
 }
 
 .login-header {
-    padding: 20px;
     background-color: #7068fb;
     color: white;
+    padding: 20px;
     text-align: left;
-}
-
-.social-media {
-    display: inline;
-    background-color: white;
-    padding: 25px;
+    width: 100%;
 }
