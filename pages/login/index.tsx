@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 import { NextPage } from 'next';
 
-import { GoogleIcon, InstagramIcon, LinkedinIcon} from 'assets/icons/index';
+import { FavouriteIcon, GoogleIcon, InstagramIcon, LinkedinIcon} from 'assets/icons/index';
 import { Layout } from '../../components/layout';
 import styles from './../../styles/Login.module.css';
 import LoginImage from 'assets/images/login.svg';
@@ -19,7 +19,7 @@ const Login: NextPage = () => {
                     <Image style={{marginLeft: 25}} src={InstagramIcon} width={35} height={35} alt={'instagram-icon'}/>
                 </section>
                 <section className={styles['login-container']}>
-                    <h1>Welcome back</h1>
+                    <h1>Welcome to AutoFavs <Image src={FavouriteIcon} width={40} height={40} alt={'instagram-icon'}/></h1> 
                     <h2>Please enter your details</h2>
                     <section>
                         <form action=''>
