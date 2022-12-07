@@ -12,12 +12,17 @@
   --wistful: #b4b1db;
 }
 
-html,
-body {
+html, body {
+  height: 100%;
   background: var(--main-bg-color);
   font-family: Roboto, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -57,7 +62,7 @@ input {
   border: none;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
   margin: 10px 0;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
 }
 
@@ -86,7 +91,7 @@ input[type="checkbox"] {
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
   color: var(--main-bg-color);
   cursor: pointer;
-  padding: 10px 25px;
+  padding: 15px 25px;
   width: 100%;
 }
 
@@ -98,7 +103,7 @@ input[type="checkbox"] {
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
   color: var(--primary);
   cursor: pointer;
-  padding: 10px 25px;
+  padding: 15px 25px;
   width: 100%;
 }
 

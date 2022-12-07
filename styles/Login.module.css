@@ -1,23 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
 /* Media queries */
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 991px) {
     .login-container {
-        padding: 150px;
+        margin: 50px;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .login-container {
-      padding: 150px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .login-container {
-      padding: 200px;
+        margin: 150px;
   }
 }
 
@@ -47,4 +42,17 @@
     position: absolute;
     z-index: -1;
     opacity: 0;
+}
+
+.login-header {
+    padding: 20px;
+    background-color: #7068fb;
+    color: white;
+    text-align: left;
+}
+
+.social-media {
+    display: inline;
+    background-color: white;
+    padding: 25px;
 }
