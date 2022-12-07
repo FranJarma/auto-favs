@@ -50,7 +50,8 @@ h3, label, span, a {
 }
 
 a {
-  color: var(--coral-tree)
+  color: var(--coral-tree);
+  font-weight: bold;
 }
 
 a:hover {
@@ -127,4 +128,11 @@ input[type="checkbox"] {
 
 .center {
   text-align: 'center'
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+  .flex-container {
+    display: block;
+  }
 }

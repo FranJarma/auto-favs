@@ -3,6 +3,11 @@
 /* Media queries */
 
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    .login-image {
+      display: none;
+    }
+  }
 @media only screen and (max-width: 991px) {
     .login-container{
         margin-left: 50px;
@@ -19,7 +24,7 @@
 }
 
 .login-image {
-    width: 80%;
+    width: 50%;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -53,3 +58,5 @@
     text-align: left;
     width: 100%;
 }
+
+
