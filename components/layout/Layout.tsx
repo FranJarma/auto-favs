@@ -2,7 +2,11 @@ import Head from 'next/head';
 import React, { FC } from 'react'
 import FavouriteIcon from 'assets/icons/favourite.svg';
 
-export const Layout: FC = ({ children }) => {
+type Props = {
+  children: React.ReactNode;
+};
+
+export const Layout: FC<Props> = ({ children }) => {
   return (
     <>
       <Head>
