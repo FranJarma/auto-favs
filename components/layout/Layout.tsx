@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import React, { FC } from 'react'
-import FavouriteIcon from 'assets/icons/favourite.svg';
 
 type Props = {
   children: React.ReactNode;
